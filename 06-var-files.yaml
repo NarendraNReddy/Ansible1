@@ -1,9 +1,8 @@
-- name: Var from files
-  host: localhost
-  become: no
+- name: var from files
+  hosts: localhost
   vars_files:
     vars.yaml
   tasks:
-  - name: "Var from files"
+  - name: vr from fi
     ansible.builtin.debug:
-      msg: "{{Course}} {{Trainer}} {{Duration}}"
+      msg: "{{Course}} {{Trainer}} {{Duration}}"  
