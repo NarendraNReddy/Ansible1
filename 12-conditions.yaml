@@ -11,9 +11,9 @@
     ansible.builtin.debug:
       msg: "Failed msg:{{USER}}"
 
-  - name: user variable check
+  - name: check user fails
     ansible.builtin.command: useradd expense
-      when: USER.rc != 0 #condition    
+      when: USER.rc != 0
     
   - name: 
     ansible.builtin.debug:
