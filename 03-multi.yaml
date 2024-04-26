@@ -8,6 +8,10 @@
 - name : PLAY-2
   hosts: localhost
   become: no
-        
+  tasks:
+  - name: PLAY-2 and TASK-1
+    ansible.builtin.debug:
+      msg: "Hello i am from Play-2 and Task-1"
+          
    
   
