@@ -5,5 +5,8 @@
     Course: 'Terraform'
     Trainer: "Siva"
     Duration: "120hrs"
-   
+  tasks:
+  - name: "vars with files:"
+    ansible.builtin.debug:
+      msg: "{{Course}} {{Trainer}} {{Duration}}" 
     
