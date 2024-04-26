@@ -1,7 +1,7 @@
-- name: var from inventory
-  hosts: locahost
-  become: no
+- name: Vars from inventory
+  hosts: localhost
+  become: no 
   tasks:
-  - name: var from inventory
+  - name: vars from inventory
     ansible.builtin.debug:
-      msg: "Invetory: {{Course}} {{Trainer}} {{Duration}}""
+      msg: "{{Course}} {{Trainer}} {{Duration}}"
