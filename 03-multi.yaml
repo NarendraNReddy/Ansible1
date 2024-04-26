@@ -5,4 +5,7 @@
     - name: PLAY1,task1
       ansible.builtin.debug:
         msg: "PLAY1,task1"
+    - name: PLAY2,task1
+      ansible.builtin.debug:
+        msg: "PLAY2,task1"      
   
