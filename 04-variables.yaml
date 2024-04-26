@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars:
-    Course: "ansible"
+    Course: "Terraform"
     Trainer: 'Siva'
-    Duration: "120hrs"
+    Duration: "15hrs"
 
   become: no
   tasks:
