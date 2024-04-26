@@ -5,7 +5,5 @@
     Course: 'Terraform'
     Trainer: "Siva"
     Duration: "120hrs"
-  tasks:
-    ansible.builtin.debug:
-      msg: "Hi {{Course}} {{Trainer}} {{Duration}}"  
+   
     
