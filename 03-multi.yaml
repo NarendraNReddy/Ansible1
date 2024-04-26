@@ -1,2 +1,8 @@
 - name: multi
+  hosts: localhost
+  become: no
+  tasks:
+    - name: PLAY1,task1
+      ansible.builtin.debug:
+        msg: "PLAY1,task1"
   
