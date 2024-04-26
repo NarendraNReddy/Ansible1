@@ -4,7 +4,6 @@
     Course: "Terraform"
     Trainer: 'Siva'
     Duration: "15hrs"
-
   become: no
   tasks:
   - name: Variable declaration
