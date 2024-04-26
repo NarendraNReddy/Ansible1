@@ -1,4 +1,4 @@
-- name: variables
+- name: variables from play level
   hosts: localhost
   vars:
     Course: "Terraform"
@@ -6,12 +6,12 @@
     Duration: "15hrs"
   become: no
   tasks:
-  - name: Variable declaration
+  - name: Variable declaration from task level
     vars:
       Course: "DevOps"    
     ansible.builtin.debug:
-      msg: "Hi Override task level,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
+      msg: "Hi task level2:  Override ,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
 
   - name: Variable declaration
     ansible.builtin.debug:
-      msg: "Hi Inheritance play level,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"      
+      msg: "Hi Play level2: Inheritance ,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"      

@@ -9,4 +9,4 @@
   tasks:
   - name: Variable declaration
     ansible.builtin.debug:
-      msg: "Hi,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
+      msg: "Ply level only: Hi,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"

@@ -5,4 +5,4 @@
   tasks:
   - name: vr from fi
     ansible.builtin.debug:
-      msg: "{{Course}} {{Trainer}} {{Duration}}"  
+      msg: "var from files: {{Course}} {{Trainer}} {{Duration}}"  

@@ -1,4 +1,4 @@
-- name: var from files
+- name: var from prompt
   hosts: localhost
   vars_prompt:
   - name: USERNAME
@@ -11,4 +11,4 @@
   tasks:
   - name: vr from fi
     ansible.builtin.debug:
-      msg: "username:{{USERNAME}},password:{{PASSWORD}}"
+      msg: "Prompt: username:{{USERNAME}},password:{{PASSWORD}}"
