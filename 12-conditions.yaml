@@ -9,7 +9,7 @@
 
   - name: check user info why failing
     ansible.builtin.debug:
-      msg: "Failed msg:{{$USER}}"
+      msg: "Failed msg:{{USER}}"
     
   - name: 
     ansible.builtin.debug:
