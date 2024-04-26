@@ -1,7 +1,11 @@
-  - name: Variable declaration
-    vars:
-      Course: "DevOps"  
-    become: no
-    tasks:    
-      ansible.builtin.debug:
-        msg: "Hi Override task level,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
+- name: vars from file
+  hosts: localhost
+  become: no
+  vars:
+    Course: 'Terraform'
+    Trainer: "Siva"
+    Duration: "120hrs"
+  tasks:
+    ansible.builtin.debug:
+      msg: "Hi {{Course}} {{Trainer}} {{Duration}}"  
+    
