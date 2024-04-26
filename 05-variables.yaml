@@ -11,4 +11,8 @@
     vars:
       Course: "DevOps"    
     ansible.builtin.debug:
-      msg: "Hi,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
+      msg: "Hi Override ,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"
+
+  - name: Variable declaration
+    ansible.builtin.debug:
+      msg: "Hi Inheritance ,we are learning {{Course}} from {{Trainer}},duration is {{Duration}}"      
